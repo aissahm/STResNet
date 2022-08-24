@@ -6,7 +6,8 @@ This file defines the Tensorflow computation graph for the ST-ResNet (Deep Spati
 
 from params import Params as param
 import modules as my
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 
 class Graph(object):

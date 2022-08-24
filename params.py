@@ -22,3 +22,4 @@ class Params(object):
     lr = 0.001
     num_epochs = 10
     logdir = "train"
+    model_path = ""

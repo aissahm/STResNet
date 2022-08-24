@@ -5,7 +5,8 @@ This file contains the main program. The computation graph for ST-ResNet is buil
 '''
 
 from st_resnet import Graph
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from params import Params as param
 from tqdm import tqdm
 from utils import batch_generator
